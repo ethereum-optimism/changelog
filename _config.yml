@@ -1,0 +1,8 @@
+url: "https://releases.optimism.io" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/"
+title: "Optimism Releases"
+collections:
+  post-mortems:
+    output: true
+exclude:
+  - README.md
