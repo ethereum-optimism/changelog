@@ -28,4 +28,7 @@ Kovan data-transport-layer:
 - 8f72064: Handle case where the remote block isn't found for GET /eth/context/latest and GET /eth/context/blocknumber/:number
 - 1741d88: Updates DTL to correctly parse L1 to L2 tx timestamps after the first bss hardfork
 
+Kovan batch-submitter:
+Migrate to Go based batch-submitter service
+
 Mainnet, implements berlin hardfork.
