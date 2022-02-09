@@ -3,8 +3,6 @@ title: Routine Upgrade
 layout: version
 packages:
     mainnet:
-        - name: l2geth
-          version: 0.5.9_d4c6d824
         - name: data-transport-layer
           version: 0.5.13
         - name: batch-submitter
@@ -31,4 +29,4 @@ Kovan data-transport-layer:
 Kovan batch-submitter:
 Migrate to Go based batch-submitter service
 
-Mainnet, implements berlin hardfork.
+Mainnet, update versions.
