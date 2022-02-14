@@ -1,8 +1,12 @@
-url: "https://releases.optimism.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://changelog.optimism.io" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "/"
-title: "Optimism Releases"
+title: "Optimism Changelog"
+author: The Optimism Team
+description: Optimism's public changelog.
 collections:
   post-mortems:
     output: true
 exclude:
   - README.md
+plugins:
+  - jekyll-feed

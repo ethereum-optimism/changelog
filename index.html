@@ -4,7 +4,7 @@ title: Home
 ---
 
 <h1>
-    <center>Optimism Public Releases Page</center>
+    <center>Optimism Public Changelog</center>
 </h1>
 
 <h2>What is this?</h2>
@@ -29,6 +29,10 @@ title: Home
 <p>
     Some releases are more important than others. Those that require action are marked with a "critical" tag in the list
     below. We may release critical software updates outside our regular release cycle at our discretion.
+</p>
+
+<p>
+    We recommend subscribing to our <a href="./feed.xml">RSS feed</a> or the <a href="https://groups.google.com/a/optimism.io/g/optimism-announce">optimism-announce@optimism.io mailing list</a>. Both will allow you to be notified when we release new software.
 </p>
 
 <h2>Supported Environments</h2>
@@ -63,7 +67,14 @@ title: Home
 <h2>Releases</h2>
 
 {% for release in site.posts %}
-<h3><a href="{{ release.url }}">{{ release.date | date: "%Y-%m-%d" }} - {{ release.title }}</a></h3>
+<h3>
+    <a href="{{ release.url }}">
+        {{ release.date | date: "%Y-%m-%d" }} - {{ release.title }}
+        {% if release.critical %}
+        <span class="critical-badge">Critical</span>
+        {% endif %}
+    </a>
+</h3>
 
 {{release.content}}
 
