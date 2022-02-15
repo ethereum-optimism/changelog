@@ -3,7 +3,7 @@ title: Mainnet Berlin Hardfork
 layout: version
 packages:
     kovan:
-        - name: go-batch-submitter
+        - name: batch-submitter-service
           version: 0.1.3
     mainnet:
         - name: l2geth
