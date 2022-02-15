@@ -15,7 +15,7 @@ This release upgrades mainnet with the Berlin hardfork. The hardfork is set to a
 The upgrade process is the same as it was on Kovan, with slightly different parameters:
 
 1. Stop Geth if it is running.
-2. Run the following command: `geth init https://storage.googleapis.com/optimism/mainnet/genesis-berlin.json 0x106b0a3247ca54714381b1109e82cc6b7e32fd79ae56fbcc2e7b1541122f84ea`. This will automatically download the updated genesis state and apply it.
+2. Run the following command: `geth init https://storage.googleapis.com/optimism/mainnet/genesis-berlin.json 0x106b0a3247ca54714381b1109e82cc6b7e32fd79ae56fbcc2e7b1541122f84ea`. You must also specify `USING_OVM=true` in your environment variables. This will automatically download the updated genesis state and apply it.
 3. Start Geth.
 
 Note that you will need to run the steps above even if you upgraded `l2geth` to version `0.5.11` last week in order to mitigate the [critical security bug](/2022/02/08/critical-security-update.html). Upgrading the node software and updating the genesis configuration are distinct processes.
