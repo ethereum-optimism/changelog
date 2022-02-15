@@ -20,6 +20,8 @@ The upgrade process is the same as it was on Kovan, with slightly different para
 
 Note that you will need to run the steps above even if you upgraded `l2geth` to version `0.5.11` last week in order to mitigate the [critical security bug](/2022/02/08/critical-security-update.html). Upgrading the node software and updating the genesis configuration are distinct processes.
 
+If you're syncing a node from scratch via [op-replica](https://github.com/optimisticben/op-replica), please use the `mainnet-gen5-berlin` shared env.
+
 Apart from the Berlin hardfork, we also upgraded the Kovan batch submitter with some minor fixes:
 
 - `69118ac`: Switch num_elements_per_batch from Histogram to Summary
