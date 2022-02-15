@@ -10,7 +10,7 @@ packages:
           version: 0.5.11
 ---
 
-This release upgrades mainnet with the Berlin hardfork. The hardfork is set to activate at block `3950000`. Given current usage, this will be sometime next week. Please upgrade your node to `0.5.11` as soon as possible.
+This release upgrades mainnet with the Berlin hardfork. The hardfork is set to activate at block `3950000`. Given current usage, this will be sometime next week. Please upgrade your replicas to l2geth `0.5.11` as soon as possible.
 
 The upgrade process is the same as it was on Kovan, with slightly different parameters:
 
