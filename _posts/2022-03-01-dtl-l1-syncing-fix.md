@@ -1,5 +1,5 @@
 ---
-title: L1 Syncing Fix
+title: DTL L1 Syncing Fix
 layout: version
 packages:
     kovan:
@@ -9,7 +9,7 @@ packages:
           version: 0.5.18
 ---
 
-This adds patch blocks to the DTL so that it can properly sync from L1. As mentioned in the [Batch Submitter L1 Sync Hotfix](/2022/01/28/l1-sync-batch-submitter-hotfix.html) release, we discovered a bug in the batch submitter that led to state root divergence between nodes that sync from L1 and nodes that sync from L2. If you are one of the small number of node operators that sync from L1, you will need to update your DTL to use version `0.5.18` and resync.
+This release adds patch blocks to the DTL so that it can properly sync from L1. As mentioned in the [Batch Submitter L1 Sync Hotfix](/2022/01/28/l1-sync-batch-submitter-hotfix.html) release, we discovered a bug in the batch submitter that led to state root divergence between nodes that sync from L1 and nodes that sync from L2. If you are one of the small number of node operators that sync from L1, you will need to update your DTL to use version `0.5.18` and resync.
 
 Note that this fix only applies to mainnet. L1 syncing on Kovan is affected by a different issue which we are still looking into a fix for.
 
