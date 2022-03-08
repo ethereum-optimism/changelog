@@ -18,7 +18,7 @@ packages:
 
 #### System Addresses
 
-This release adds support for two additional system addresses to our Kovan sequencer. System addresses are special addresses of the form `0x420...NN`, and are used for things like our cross chain messenger contract. **This change is technically a hardfork, so please upgrade your replicas as soon as possible in order to avoid a chain split.**
+This release adds support for two additional system addresses to our Kovan sequencer. System addresses are special addresses of the form `0x420...NN`, and are used for things like our cross chain messenger contract. **This change is technically a hardfork, so please upgrade your replicas to at least `0.5.14` as soon as possible in order to avoid a chain split.**
 
 Note that both system addresses are currently empty. Unupgraded nodes will continue to work until we deploy a contract at one of the system addresses. However, you should still upgrade as soon as possible since we might deploy a system contract at any time without warning.
 
