@@ -30,3 +30,20 @@ body {
   display: inline-block;
   float: right;
 }
+
+.highlighter-rouge .highlight {
+  background: transparent;
+}
+
+.highlighter-rouge {
+  background: #efefef;
+  margin: 1.5em 0;
+
+  pre {
+    margin: 0;
+  }
+
+  & > div {
+    padding: 12px 18px;
+  }
+}
