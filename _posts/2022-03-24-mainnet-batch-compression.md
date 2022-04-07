@@ -2,9 +2,6 @@
 title: Mainnet Batch Compression
 layout: version
 packages:
-    mainnet:
-        - name: batch-submitter-service
-          version: 0.1.7
 ---
 
 #### Batch Compression
